@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>CRUD</display-name>
+  
+  
+  <servlet>
+  <servlet-name>first</servlet-name>
+  <servlet-class>com.bitlabs.HomeController</servlet-class>  
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>first</servlet-name>
+  <url-pattern></url-pattern>  
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>two</servlet-name>
+  <servlet-class>com.bitlabs.SaveServlet</servlet-class>  
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>two</servlet-name>
+  <url-pattern>/SaveServlet</url-pattern>  
+  </servlet-mapping>
+  
+   
+   <servlet>
+  <servlet-name>three</servlet-name>
+  <servlet-class>com.bitlabs.ViewServlet</servlet-class>  
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>three</servlet-name>
+  <url-pattern>/ViewServlet</url-pattern>  
+  </servlet-mapping>
+   
+   <servlet>
+  <servlet-name>four</servlet-name>
+  <servlet-class>com.bitlabs.EditServlet</servlet-class>  
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>four</servlet-name>
+  <url-pattern>/EditServlet</url-pattern>  
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>five</servlet-name>
+  <servlet-class>com.bitlabs.EditServlet2</servlet-class>  
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>five</servlet-name>
+  <url-pattern>/EditServlet2</url-pattern>  
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>six</servlet-name>
+  <servlet-class>com.bitlabs.DeleteServlet</servlet-class>  
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>six</servlet-name>
+  <url-pattern>/DeleteServlet</url-pattern>  
+  </servlet-mapping>
+</web-app>
